@@ -19,16 +19,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
-}
-
-button:active {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
-}
-
 .linkedIn {
   background-image: url("/images/linkedin-visa-logo.png");
 }

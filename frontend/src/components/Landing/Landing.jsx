@@ -8,12 +8,15 @@ export default function Landing() {
         <section className={styles.image}></section>
         <section className={styles.introduction}>
           <h2>Shane Chapman</h2>
-          <h1>
-            FULL-STACK <br />
-            DEVELOPER
-          </h1>
+          <div className={styles.titleContainer}>
+            <h1>
+              FULL-STACK
+              <br />
+              DEVELOPER
+            </h1>
+          </div>
           <p className={styles.technologies}>
-            Javascript, React, Node.js, and Express
+            Javascript, React, Node.js, Express.
           </p>
           <ContactButtons />
         </section>

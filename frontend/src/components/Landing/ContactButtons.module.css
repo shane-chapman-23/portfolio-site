@@ -1,10 +1,9 @@
 .buttonGroup {
   display: flex;
-  margin-top: 20px;
 }
 
 button {
-  width: 130px;
+  width: 120px;
   height: 75px;
   margin: 0 5px 0 5px;
   margin-bottom: 20px;
@@ -29,4 +28,11 @@ button {
 
 .resume {
   background-image: url("/images/resume-american-express-logo.png");
+}
+
+@media (min-width: 1200px) {
+  button {
+    width: 150px;
+    height: 90px;
+  }
 }

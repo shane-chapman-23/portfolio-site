@@ -3,8 +3,8 @@
 }
 
 button {
-  width: 120px;
-  height: 75px;
+  width: clamp(100px, 25vw, 120px);
+  height: clamp(60px, 16vw, 75px);
   margin: 0 5px 0 5px;
   margin-bottom: 20px;
   background-size: cover;

@@ -3,16 +3,15 @@
 }
 
 button {
-  width: clamp(100px, 25vw, 120px);
-  height: clamp(60px, 16vw, 75px);
-  margin: 0 5px 0 5px;
-  margin-bottom: 20px;
+  width: 90px;
+  height: 51px;
+  margin: 20px 5px 20px 5px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-style: none;
 
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 
   cursor: pointer;
@@ -30,9 +29,28 @@ button {
   background-image: url("/images/resume-american-express-logo.png");
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
+  /* .buttonGroup {
+    margin-left: 30px;
+  } */
+
   button {
-    width: 150px;
-    height: 90px;
+    width: 90px;
+    height: 51px;
+
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1300px) {
+  /* .buttonGroup {
+    margin-left: 80px;
+  } */
+
+  button {
+    width: 130px;
+    height: 75px;
+
+    margin-top: 0px;
   }
 }

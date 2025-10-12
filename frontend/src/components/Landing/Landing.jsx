@@ -21,14 +21,14 @@ export default function Landing() {
           ></img>
         </section>
         <section className={styles.introduction}>
-          <ContactButtons />
           <div className={styles.titleContainer}>
+            <h2>Shane Chapman</h2>
             <h1 className={styles.title}>
-              Hi, I'm <span style={{ fontStyle: "italic" }}>Shane.</span> <br />
-              I like making <br />
-              Websites.
+              Full-Stack <br />
+              Developer.
             </h1>
           </div>
+
           <p className={styles.technologies}>
             <SiJavascript title="JavaScript" />
             Javascript
@@ -41,6 +41,7 @@ export default function Landing() {
             <SiMongodb title="MongoDB" />
             MongoDB
           </p>
+          <ContactButtons />
         </section>
       </div>
     </>

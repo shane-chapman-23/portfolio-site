@@ -1,8 +1,11 @@
 .landingContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
-  padding-top: 50px;
+  height: 100vh;
+  /* padding-top: 50px; */
 }
 
 .imageSection {
@@ -24,25 +27,27 @@
   width: 100vw;
 }
 
-.titleContainer > h1 {
-  color: yellow;
-  font-size: clamp(2.8rem, 8vw + 1rem, 3.7rem);
+.titleContainer > h2 {
+  color: white;
+  font-size: clamp(2rem, 8vw + 1rem, 2.8rem);
   font-weight: 1000;
-  line-height: 0.95;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black, 3px 3px 0 rgba(0, 0, 0, 1);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.titleContainer > h1 {
+  color: #f1e317;
+  font-size: clamp(4rem, 8vw + 1rem, 6.5rem);
+  font-weight: 1000;
+  line-height: 0.85;
   text-align: center;
   letter-spacing: -3px;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black, 4px 4px 0 rgba(0, 0, 0, 1);
-}
 
-.title {
-}
-
-.technologiesContainer {
-  display: flex;
-  justify-content: center;
-
-  padding-top: 20px;
+  z-index: 5;
 }
 
 .technologies {
@@ -50,11 +55,17 @@
   font-weight: 600;
   font-size: clamp(1rem, 1.2vw + 0.8rem, 1.2rem);
   font-style: italic;
-  text-align: left;
+  text-align: center;
   text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black,
-    0.5px 0.5px 0 black, 3px 3px 0 rgba(0, 0, 0, 1);
+    0.5px 0.5px 0 black, 2px 2px 0 rgba(0, 0, 0, 1);
 
-  padding-top: 20px;
+  padding-top: 7px;
+  padding-right: 10px;
+  margin-top: 20px;
+
+  border-style: solid none; /* top, right, bottom, left */
+  border-width: 2px;
+  border-color: rgb(21, 21, 177);
 }
 
 .technologies svg {
@@ -64,7 +75,7 @@
 
   margin-bottom: 5px;
 
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 1));
+  filter: drop-shadow(3px 3px 0 0 rgba(0, 0, 0, 1));
 }
 
 /* Medium screens */
@@ -97,13 +108,8 @@
     text-align: left;
   }
 
-  .technologiesContainer {
-    padding-top: 100px;
-  }
-
   .technologies {
     font-size: 0.8rem;
-    padding-top: 10px;
   }
 
   .technologies > svg {
@@ -119,17 +125,26 @@
     height: 600px;
   }
 
+  .titleContainer > h2 {
+    margin-bottom: 30px;
+  }
+
   .titleContainer > h1 {
-    font-size: 6rem;
+    font-size: 8rem;
+  }
+
+  .techContainer {
+    margin-top: 10px;
+    height: 25px;
   }
 
   .technologies {
+    margin-top: 40px;
     font-size: 1.2rem;
-    padding-top: 20px;
   }
 
   .technologies > svg {
-    width: 1.4em;
+    width: 1.6em;
     height: auto;
   }
 }

@@ -6,9 +6,11 @@
 
 button {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 110px;
+  width: clamp(4.5rem, 20vw + 0.8rem, 8rem);
+
   height: 51px;
   margin: 20px 10px 20px 10px;
   border-style: none;
@@ -24,4 +26,13 @@ button {
 
 button > svg {
   font-size: 1.5rem;
+}
+
+@media (min-width: 850px) {
+  button {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1300px) {
 }

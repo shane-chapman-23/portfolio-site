@@ -5,17 +5,17 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  /* padding-top: 50px; */
 }
 
 .imageSection {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .imageSection > img {
-  width: 300px;
-  height: 290px;
+  width: 90%;
+  height: auto;
   object-fit: cover;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
 }
@@ -29,7 +29,7 @@
 
 .titleContainer > h2 {
   color: white;
-  font-size: clamp(2rem, 8vw + 1rem, 2.8rem);
+  font-size: clamp(1.5rem, 4vw + 1rem, 2.8rem);
   font-weight: 1000;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black, 3px 3px 0 rgba(0, 0, 0, 1);
@@ -39,7 +39,7 @@
 
 .titleContainer > h1 {
   color: #f1e317;
-  font-size: clamp(4rem, 8vw + 1rem, 6.5rem);
+  font-size: clamp(2rem, 15vw + 1rem, 6.5rem);
   font-weight: 1000;
   line-height: 0.85;
   text-align: center;
@@ -85,7 +85,7 @@
   }
 
   .imageSection {
-    width: 50vw;
+    width: 25vw;
     justify-content: flex-end;
   }
 
@@ -95,7 +95,7 @@
   }
 
   .introduction {
-    align-items: flex-start;
+    /* align-items: flex-start; */
     width: 50vw;
     margin-left: 25px;
   }
@@ -105,7 +105,7 @@
   }
 
   .titleContainer > h1 {
-    text-align: left;
+    text-align: center;
   }
 
   .technologies {
@@ -121,8 +121,8 @@
 /* Large screens */
 @media (min-width: 1300px) {
   .imageSection > img {
-    width: 600px;
-    height: 600px;
+    width: 200px;
+    height: 200px;
   }
 
   .titleContainer > h2 {

@@ -1,0 +1,33 @@
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+
+  margin-top: 30px;
+  padding: 5px 0;
+
+  border-style: solid none;
+  border-width: 2px;
+  border-color: rgb(102, 100, 219);
+}
+
+.techItem {
+  display: flex;
+  align-items: center;
+
+  margin: 0px 5px;
+}
+
+.techItem > svg {
+  color: white;
+  margin-right: 5px;
+}
+
+.techItem > p {
+  color: white;
+  font-style: italic;
+  font-size: clamp(1rem, 0.6vw + 0.8rem, 1.45rem);
+  text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black,
+    0.5px 0.5px 0 black, 2px 2px 0 rgba(0, 0, 0, 1);
+}

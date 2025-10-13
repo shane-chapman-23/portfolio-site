@@ -14,19 +14,19 @@ export default function ContactButtons() {
       >
         <button className={styles.linkedIn}>
           <RiLinkedinBoxLine />
-          LinkedIn
+          <p>LinkedIn</p>
         </button>
       </a>
       <a href="mailto:shanechristopherjohnchapman@gmail.com">
         <button className={styles.email}>
           <MdOutlineMailOutline />
-          Email
+          <p>Email</p>
         </button>
       </a>
       <a href="/shaneChapmanResume.pdf" download>
         <button className={styles.resume}>
           <IoDocumentTextOutline />
-          Resume
+          <p>Resume</p>
         </button>
       </a>
     </div>
